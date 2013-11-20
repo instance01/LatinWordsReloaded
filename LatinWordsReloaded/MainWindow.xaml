@@ -1,0 +1,26 @@
+﻿<Controls:MetroWindow x:Class="LatinWordsReloaded.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro" x:Name="_base"
+        Title="Latin Words Reloaded" Height="300" Width="525">
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colours.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Orange.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+                <ResourceDictionary Source="/Resources/Icons.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="btn1" Content="Latein abfragen" HorizontalAlignment="Left" Margin="90,71,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="btn1click"/>
+        <Button x:Name="btn2" Content="Latein einfügen" HorizontalAlignment="Left" Margin="90,130,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="btn2click"/>
+        <Button x:Name="btn3" Content="Englisch abfragen" HorizontalAlignment="Left" Margin="309,71,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="btn3click" IsEnabled="False"/>
+        <Button x:Name="btn4" Content="Englisch einfügen" HorizontalAlignment="Left" Margin="309,130,0,0" VerticalAlignment="Top" Width="128" Height="34" Click="btn4click" IsEnabled="False"/>
+        <Label Content="by InstanceLabs" HorizontalAlignment="Left" Margin="403,234,0,0" VerticalAlignment="Top" Width="104"/>
+
+    </Grid>
+</Controls:MetroWindow>
