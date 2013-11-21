@@ -12,6 +12,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using MahApps.Metro.Controls;
+using MahApps.Metro;
+using System.Collections;
+using System.Diagnostics;
 
 namespace LatinWordsReloaded
 {
@@ -20,6 +23,10 @@ namespace LatinWordsReloaded
         public MainWindow()
         {
             InitializeComponent();
+
+            foreach(Accent ac in ThemeManager.DefaultAccents){
+                Debug.Print(ac.Name);
+            }
         }
 
         private void btn1click(object sender, RoutedEventArgs e)
@@ -44,6 +51,31 @@ namespace LatinWordsReloaded
         private void btn4click(object sender, RoutedEventArgs e)
         {
             // englisch einfügen
+        }
+
+        private void menuitem1_click(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.ChangeTheme(this, ThemeManager.DefaultAccents.ElementAt(0), Theme.Dark);
+        }
+
+        private void menuitem2_click(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.ChangeTheme(this, ThemeManager.DefaultAccents.ElementAt(1), Theme.Dark);
+        }
+
+        private void menuitem3_click(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.ChangeTheme(this, ThemeManager.DefaultAccents.ElementAt(2), Theme.Dark);
+        }
+
+        private void menuitem4_click(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.ChangeTheme(this, ThemeManager.DefaultAccents.ElementAt(3), Theme.Dark);
+        }
+
+        private void menuitem5_click(object sender, RoutedEventArgs e)
+        {
+            ThemeManager.ChangeTheme(this, ThemeManager.DefaultAccents.ElementAt(4), Theme.Dark);
         }
 
 

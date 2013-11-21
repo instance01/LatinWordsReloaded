@@ -18,8 +18,8 @@
     <Grid>
         <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="23" Margin="37,29,0,0" TextWrapping="Wrap" Text="Vokabel" VerticalAlignment="Top" Width="176" IsReadOnly="True"/>
         <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="23" Margin="37,67,0,0" TextWrapping="Wrap" Controls:TextboxHelper.Watermark="Lösung" VerticalAlignment="Top" Width="176" KeyDown="txtbox2_keydown"/>
-        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Height="270" Margin="469,0,0,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Weitere Bedeutungen" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
-        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="270" Margin="246,0,0,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Fehler" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
+        <TextBox x:Name="TextBox4" HorizontalAlignment="Left" Height="270" Margin="470,-1,-1,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Weitere Bedeutungen" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
+        <TextBox x:Name="TextBox3" HorizontalAlignment="Left" Height="270" Margin="248,-1,0,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Fehler" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
         <Label x:Name="Label3" Content="Label" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="134"/>
 
     </Grid>

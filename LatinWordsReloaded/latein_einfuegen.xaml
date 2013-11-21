@@ -16,8 +16,8 @@
         </ResourceDictionary>
     </Window.Resources>
     <Grid>
-        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="270" Margin="469,0,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
-        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="270" Margin="246,0,0,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Neue Wörter" VerticalAlignment="Top" Width="223"/>
+        <TextBox x:Name="TextBox2" HorizontalAlignment="Left" Height="270" Margin="469,-1,0,0" TextWrapping="Wrap" AcceptsReturn="True" VerticalAlignment="Top" Width="223" IsReadOnly="True"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="270" Margin="247,-1,0,0" TextWrapping="Wrap" AcceptsReturn="True" Controls:TextboxHelper.Watermark="Neue Wörter" VerticalAlignment="Top" Width="223"/>
         <Label x:Name="Label2" Content="" HorizontalAlignment="Left" Margin="10,234,0,0" VerticalAlignment="Top" Width="134"/>
         <Button x:Name="Button1" Content="Speichern" HorizontalAlignment="Left" Margin="166,234,0,0" VerticalAlignment="Top" Width="75" Click="btn1_click"/>
 
