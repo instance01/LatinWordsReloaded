@@ -43,7 +43,14 @@ namespace LatinWordsReloaded
 
         private void einfügen_form_Load(object sender, EventArgs e)
         {
-            TextBox2.Text = File.ReadAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
+            if (File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt"))
+            {
+                TextBox2.Text = File.ReadAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
+            }
+            else
+            {
+                File.Create(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
+            }
         }
 
         private void btn1_click(object sender, RoutedEventArgs e)

@@ -129,19 +129,28 @@ namespace LatinWordsReloaded
         int currentcount = 0;
         private void abfragen_form_Load(object sender, RoutedEventArgs e)
         {
-            allwords = System.IO.File.ReadAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
-            allwordsar = allwords.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
+            if (System.IO.File.Exists(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt"))
+            {
+                allwords = System.IO.File.ReadAllText(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
+                allwordsar = allwords.Split(new string[] { Environment.NewLine }, StringSplitOptions.None);
 
 
-            RandomizeArray(allwordsar);
+                RandomizeArray(allwordsar);
 
-            string[] newar = allwordsar[currentcount].ToString().Split('#');
-            TextBox1.Text = newar[0];
-            currentcount += 1;
+                string[] newar = allwordsar[currentcount].ToString().Split('#');
+                TextBox1.Text = newar[0];
+                currentcount += 1;
 
-            TextBox2.Focus();
+                TextBox2.Focus();
 
-            Label3.Content = goodwords.Count + "/" + allwordsar.Length;
+                Label3.Content = goodwords.Count + "/" + allwordsar.Length;
+            }
+            else
+            {
+                MessageBox.Show("latin_words.txt could not be found. Creating new File..");
+                System.IO.File.Create(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\latin_words.txt");
+            }
+            
         }
     }
 }
